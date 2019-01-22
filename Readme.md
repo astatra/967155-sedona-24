@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Руль](https://up.htmlacademy.ru/htmlcss/24/user/967155).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович] (https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
