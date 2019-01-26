@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="main navigation">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href=photos&videos.html> Фото и видео</a></li>
+        <li>
+          <a href="index.html" class="header-logo">
+            <img src="img/index-logo.svg" alt="City of Sedona's logo">
+          </a>
+        </li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <figure>
+      <img src="img/index-poster.jpg" alt="poster">
+    </figure>
+    <section>
+      <h1>
+        Седона - небольшой городок в Аризоне, заслуживающий большего!
+      </h1>
+      <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
+    </section>
+    <section>
+      <h2>Заинтересовались?</h2>
+      <h3>Укажите предполагаемые даты поездки,
+        <br>
+        и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+      <form>
+        <fieldset>
+          <legend>Поиск гостинницы в Седоне</legend>
+          <div>
+            <label for="check-in-date">
+              Дата заезда
+            </label>
+            <input type="date" name="check-in" id="check-in-date">
+          </div>
+          <div>
+            <label for="check-out-date">
+              Дата выезда
+            </label>
+            <input type="date" name="check-out" id="check-out-date">
+          </div>
+          <div>
+            <label for="adult-guests">
+              Взрослые
+            </label>
+            <input type="number" name="adults" id="adult-guests">
+          </div>
+          <div>
+            <label for="children-guests">
+              Дети
+            </label>
+            <input type="number" name="children" id="children-guests">
+          </div>
+          <input type="button" value="Найти">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="#">#Visitsedona</a>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button" href="#">
+            <img src="twitter.jpg" alt="twitter icon">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <img src="facebook.jpg" alt="facebook icon">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <img src="youtube.jpg" alt="youtube icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <a class="button" href="https://htmlacademy.ru">
+        <img src="html-academy.jpg" alt="html-academy logo">
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
