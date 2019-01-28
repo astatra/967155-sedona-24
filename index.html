@@ -7,62 +7,66 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main navigation">
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href=photos&videos.html> Фото и видео</a></li>
-        <li>
-          <a href="index.html" class="header-logo">
-            <img src="img/index-logo.svg" alt="City of Sedona's logo">
-          </a>
-        </li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+  <header class="mainHeader">
+    <nav class="mainHeader_navigation">
+      <a href="index.html" class="header-logo">
+        <img src="img/index-logo.svg" alt="City of Sedona's logo">
+      </a>
+      <ul class="mainHeader_list">
+        <li class="mainHeader_list_item"><a href="info.html">Информация</a></li>
+        <li class="mainHeader_list_item"><a href=photos&videos.html> Фото и видео</a></li>
+        <li class="mainHeader_list_item"><a href="map.html">Карта штата</a></li>
+        <li class="mainHeader_list_item"><a href="inner.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <figure>
+    <figure class="main-poster">
       <img src="img/index-poster.jpg" alt="poster">
     </figure>
-    <section>
-      <h1>
-        Седона - небольшой городок в Аризоне, заслуживающий большего!
-      </h1>
-      <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
+    <section class="info">
+      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
     </section>
     <section>
       <h2>Заинтересовались?</h2>
-      <h3>Укажите предполагаемые даты поездки,
+      <p>Укажите предполагаемые даты поездки,
         <br>
-        и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
+        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button>Поиск гостинницы в Седоне</button>
       <form>
         <fieldset>
-          <legend>Поиск гостинницы в Седоне</legend>
           <div>
             <label for="check-in-date">
               Дата заезда
             </label>
-            <input type="date" name="check-in" id="check-in-date">
+            <div>
+              <input type="text" name="check-in" id="check-in-date">
+              <button></button>
+            </div>
           </div>
           <div>
             <label for="check-out-date">
               Дата выезда
             </label>
-            <input type="date" name="check-out" id="check-out-date">
+            <div>
+              <input type="text" name="check-out" id="check-out-date">
+              <button></button>
+            </div>
           </div>
           <div>
-            <label for="adult-guests">
-              Взрослые
-            </label>
-            <input type="number" name="adults" id="adult-guests">
-          </div>
-          <div>
-            <label for="children-guests">
-              Дети
-            </label>
-            <input type="number" name="children" id="children-guests">
+            <div>
+              <label for="adult-guests">
+                Взрослые
+              </label>
+              <input type="number" name="adults" id="adult-guests">
+            </div>
+            <div>
+              <label for="children-guests">
+                Дети
+              </label>
+              <input type="number" name="children" id="children-guests">
+            </div>
           </div>
           <input type="button" value="Найти">
         </fieldset>
@@ -76,19 +80,13 @@
     <div class="footer-social">
       <ul>
         <li>
-          <a class="social-button" href="#">
-            <img src="twitter.jpg" alt="twitter icon">
-          </a>
+          <a class="social-button" href="#">Twitter</a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img src="facebook.jpg" alt="facebook icon">
-          </a>
+          <a class="social-button" href="#"> Facebook</a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img src="youtube.jpg" alt="youtube icon">
-          </a>
+          <a class="social-button" href="#">Youtube</a>
         </li>
       </ul>
     </div>
