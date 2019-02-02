@@ -33,16 +33,16 @@
       <p>Укажите предполагаемые даты поездки,
         <br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button>Поиск гостинницы в Седоне</button>
-      <form>
+      <button class="search"> Поиск гостинницы в Седоне</button>
+      <form class="bookingForm" action="http://echo.htmlacademy.ru" method="POST">
         <fieldset>
           <div>
             <label for="check-in-date">
               Дата заезда
             </label>
             <div>
-              <input type="text" name="check-in" id="check-in-date">
-              <button></button>
+              <input type="text" name="check-in" id="check-in-date" placeholder="24 апреля 2017">
+              <button aria-label="Календарь"></button>
             </div>
           </div>
           <div>
@@ -50,8 +50,8 @@
               Дата выезда
             </label>
             <div>
-              <input type="text" name="check-out" id="check-out-date">
-              <button></button>
+              <input type="text" name="check-out" id="check-out-date" placeholder="4 июля 2016">
+              <button aria-label="Календарь"></button>
             </div>
           </div>
           <div>
@@ -59,16 +59,16 @@
               <label for="adult-guests">
                 Взрослые
               </label>
-              <input type="number" name="adults" id="adult-guests">
+              <input type="number" name="adults" id="adult-guests" placeholder="2">
             </div>
             <div>
               <label for="children-guests">
                 Дети
               </label>
-              <input type="number" name="children" id="children-guests">
+              <input type="number" name="children" id="children-guests" placeholder="0">
             </div>
           </div>
-          <input type="button" value="Найти">
+          <button type="submit"> Найти </button>
         </fieldset>
       </form>
     </section>
@@ -91,7 +91,7 @@
       </ul>
     </div>
     <div> Website by
-      <a class="button" href="https://htmlacademy.ru">
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="html-academy logo">
       </a>
     </div>
