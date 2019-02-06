@@ -2,17 +2,17 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'PT Sans',Arial, sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
     color: #333333;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 
 a {
@@ -21,51 +21,38 @@ a {
 
 .link {
     text-decoration: none;
-    color:#000000;
+    color: #000000;
 }
-.mainHeader__listItem .link {
+.navigationMenu__listItem .link {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
 }
-.mainHeader__listItem .link:hover {
-    color:#81b3d2;
+.navigationMenu__listItem .link:hover {
+    color: #81b3d2;
 }
-.mainHeader__listItem .link:focus {
-    color:rgba(0, 0, 0, 0.3)
+.navigationMenu__listItem .link:focus {
+    color: rgba(0, 0, 0, 0.3);
 }
-.mainHeader__listItem .link:active {
-    color:#766357;
+.navigationMenu__listItem .link:active {
+    color: #766357;
 }
-.info {
+.heading2 {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     text-align: center;
-    color:#000000;
-}
-.features {
-    line-height: 26px;
-    text-align: center;
     color: #000000;
 }
-.intro__title {
+.heading1 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color:#000000;
+    color: #000000;
 }
-.intro__header {
+.body1 {
     text-align: center;
     color: #333333;
-}
-.searchForm {
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #766357;
 }
 .hashtag {
     font-size: 21px;
@@ -73,30 +60,30 @@ a {
     line-height: 26px;
     color: #000000;
 }
-.hotelName {
+.hotels__name {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    color:#000000;
+    color: #000000;
 }
-.hotelName:hover {
-    color:#81b3d2;
+.hotels__name:hover {
+    color: #81b3d2;
 }
-.hotelName:active {
-    color:rgba(0, 0, 0, 0.3);
+.hotels__name:active {
+    color: rgba(0, 0, 0, 0.3);
 }
-.rate {
+.hotels__rate {
     line-height: 21px;
     color: #666666;
 }
 
 .button {
     line-height: 21px;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .button:active {
-    color:rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button_blue {
@@ -106,15 +93,15 @@ a {
     background-color: #669ec0;
 }
 .button_blue:active {
-    background-color:#5496bd;
+    background-color: #5496bd;
 }
 
 .button_brown {
-    background-color:#766357;
+    background-color: #766357;
 }
 .button_brown:hover{
     background-color: #604e43;
 }
 .button_brown:active {
-    background-color:#503e33;
+    background-color: #503e33;
 }

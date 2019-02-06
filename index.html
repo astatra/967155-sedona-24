@@ -11,15 +11,15 @@
 
 <body>
   <header class="mainHeader">
-    <nav class="mainHeader_navigation">
-      <a href="index.html" class="headerLogo link">
+    <nav class="navigationMenu">
+      <a href="index.html" class="mainHeader__logo link">
         <img src="img/svg-sedona/logo-sedona.svg" width="140" height="71" alt="City of Sedona's logo">
       </a>
-      <ul class="mainHeader__list">
-        <li class="mainHeader__listItem"><a href="info.html" class="link">Информация</a></li>
-        <li class="mainHeader__listItem"><a href=photos&videos.html class="link"> Фото и видео</a></li>
-        <li class="mainHeader__listItem"><a href="map.html" class="link">Карта штата</a></li>
-        <li class="mainHeader__listItem"><a href="catalog.html" class="link">Гостиницы</a></li>
+      <ul class="navigationMenu__list">
+        <li class="navigationMenu__listItem"><a href="info.html" class="link">Информация</a></li>
+        <li class="navigationMenu__listItem"><a href=photos&videos.html class="link"> Фото и видео</a></li>
+        <li class="navigationMenu__listItem"><a href="map.html" class="link">Карта штата</a></li>
+        <li class="navigationMenu__listItem"><a href="catalog.html" class="link">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -28,17 +28,17 @@
       <img src="img/background-photo.png" width="1200" height="773" alt="poster">
     </figure>
     <section>
-      <h1 class="info">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="features">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+      <h1 class="heading2">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="body1">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
     </section>
     <section>
-      <div class="intro">
-        <h2 class="intro__title">Заинтересовались?</h2>
-        <p class="intro__header">Укажите предполагаемые даты поездки,
+      <div>
+        <h2 class="heading1">Заинтересовались?</h2>
+        <p class="body1">Укажите предполагаемые даты поездки,
           <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <a href="sedona-search.html" class="searchForm button_brown button"> Поиск гостинницы в Седоне</a>
+      <a href="sedona-search.html" class="heading2 button button_brown"> Поиск гостинницы в Седоне</a>
       <form class="bookingForm" action="http://echo.htmlacademy.ru" method="POST">
         <fieldset>
           <div>
@@ -47,7 +47,7 @@
             </label>
             <div>
               <input type="text" name="checkIn" id="checkInDate" placeholder="24 апреля 2017">
-              <button title="Calendar" aria-label="Календарь"></button>
+              <button title="Календарь"></button>
             </div>
           </div>
           <div>
@@ -56,7 +56,7 @@
             </label>
             <div>
               <input type="text" name="checkOut" id="checkOutDate" placeholder="4 июля 2016">
-              <button title="calendar" aria-label="Календарь"></button>
+              <button title="Календарь"></button>
             </div>
           </div>
           <div>
@@ -64,20 +64,20 @@
               <label for="adultGuests">
                 Взрослые
               </label>
-              <button title="subtract" aria-label="Отнять"></button>
+              <button title="Отнять"></button>
               <input type="text" name="adults" id="adultGuests" placeholder="2">
-              <button title="add" aria-label="Добавить"></button>
+              <button title="Добавить"></button>
             </div>
             <div>
               <label for="childrenGuests">
                 Дети
               </label>
-              <button title="subtract" aria-label="Отнять"></button>
+              <button title="Отнять"></button>
               <input type="text" name="children" id="childrenGuests" placeholder="0">
-              <button title="add" aria-label="Добавить"></button>
+              <button title="Добавить"></button>
             </div>
           </div>
-          <button title="search" type="submit" class="button button_blue">Найти</button>
+          <button title="search" type="submit" class="heading2 button button_blue">Найти</button>
         </fieldset>
       </form>
     </section>
