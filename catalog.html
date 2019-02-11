@@ -10,25 +10,31 @@
 </head>
 
 <body>
-  <header class="mainHeader">
-    <nav class="navigationMenu">
+  <header class="mainHeader container">
+    <nav class="navigation">
       <a href="index.html" class="mainHeader__logo link">
         <img src="img/svg-sedona/logo-sedona.svg" width="140" height="71" alt="City of Sedona's logo">
       </a>
-      <ul class="navigationMenu__list">
-        <li class="navigationMenu__listItem">
+      <ul class="navigation__list">
+        <li class="navigation__listItem navigation__listItem_left">
           <a href="info.html" class="link">Информация</a>
         </li>
-        <li class="navigationMenu__listItem"><a href=photos&videos.html class="link"> Фото и видео</a></li>
-        <li class="navigationMenu__listItem"><a href="map.html" class="link">Карта штата</a></li>
-        <li class="navigationMenu__listItem"><a href="catalog.html" class="link">Гостиницы</a></li>
+        <li class="navigation__listItem navigation__listItem_left">
+          <a href=photos&videos.html class="link">Фото и видео</a>
+        </li>
+        <li class="navigation__listItem navigation__listItem_right">
+          <a href="map.html" class="link">Карта штата</a>
+        </li>
+        <li class="navigation__listItem navigation__listItem_right">
+          <a href="catalog.html" class="link">Гостиницы</a>
+        </li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visuallyHidden">Гостиницы Седоны</h1>
     <div class="hotels">
-      <article>
+      <article class="catalogItem">
         <figure class="hotels__poster">
           <img src="img/amara.png" width="135" height="90" alt="amara hotel image">
         </figure>
@@ -41,8 +47,8 @@
             <span>от 4000 р</span>
           </div>
           <div>
-            <a href="description-amara.html" class="button button_blue">Подробнее</a>
-            <a href="order.html" class="button button_brown">Забронировать</a>
+            <a href="description-amara.html" class="button button_blue button_details">Подробнее</a>
+            <a href="order.html" class="button button_brown button_book">Забронировать</a>
           </div>
         </section>
         <div class="hotels__metaRate">
@@ -55,7 +61,7 @@
           <div class="hotels__rate">Рейтинг 8,5</div>
         </div>
       </article>
-      <article>
+      <article class="catalogItem">
         <figure class="hotels__poster">
           <img src="img/desert-quail-inn.png" width="135" height="90" alt="desert quail inn image">
         </figure>
@@ -66,8 +72,8 @@
             <span>от 3000 р</span>
           </div>
           <div>
-            <a href="description-inn.html" class="button button_blue">Подробнее</a>
-            <a href="order.html" class="button button_brown">Забронировать</a>
+            <a href="description-inn.html" class="button button_blue button_details">Подробнее</a>
+            <a href="order.html" class="button button_brown button_book">Забронировать</a>
           </div>
         </section>
         <div class="hotels__metaRate">
@@ -79,7 +85,7 @@
           <div class="hotels__rate">Рейтинг 8,9</div>
         </div>
       </article>
-      <article>
+      <article class="catalogItem">
         <figure class="hotels__poster">
           <img src="img/villas-at-poco-diablo.png" width="135" height="90" alt="villas-at-poco-diablo image">
         </figure>
@@ -90,11 +96,11 @@
             <span>от 2000 р</span>
           </div>
           <div>
-            <a href="description-villas.html" class="button button_blue">Подробнее</a>
-            <a href="order.html" class="button button_brown">Забронировать</a>
+            <a href="description-villas.html" class="button button_blue button_details">Подробнее</a>
+            <a href="order.html" class="button button_brown button_book">Забронировать</a>
           </div>
         </section>
-        <div class="hotels__meta">
+        <div class="hotels__metaRate">
           <div>
             <span class="star">★</span>
             <span class="star">★</span>
@@ -104,7 +110,7 @@
       </article>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="container footer">
     <div class="hashtag">
       <a href="#" class="link">#visitsedona</a>
     </div>
