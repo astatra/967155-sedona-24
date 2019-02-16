@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: PT Sans, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
@@ -19,14 +18,36 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .link {
     text-decoration: none;
     color: #000000;
 }
 
-.visuallyHidden {
-    display:none;
+.mainBackground {
+    background: #f2f2f2;
 }
+
+.visuallyHidden:not(:focus):not(:active) {
+      position: absolute;
+    
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+    
+      white-space: nowrap;
+    
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+}
+
 .navigation__listItem .link {
     font-weight: bold;
     line-height: 26px;
@@ -87,14 +108,18 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 .hotels__rate {
-    line-height: 21px;
     color: #666666;
+    background-color: #f2f2f2;
+    padding-left: 16px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 6px;
 }
 
 .button {
-    line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
+    border: 0;
 }
 
 .button:active {
@@ -126,19 +151,60 @@ a {
 }
 
 /* ----- Сеточные стили ----- */
+
 .container {
+    display: flex;
+    flex-flow: column;
     width: 1200px;
+    min-height: 100vh;
     margin: 0 auto;
+    font-family: inherit;
+    background: white;
+    box-shadow: 0 0 10px 5px rgba(169, 179, 179, 0.12);
+}
+
+.contentArea {
+    flex-grow: 1;
+}
+
+.mainHeader {
+    position: relative;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: -10px;
 }
 
 .navigation__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    min-height: 56px;
+    justify-content: space-evenly;
 }
 
-.container2 {
+.mainHeader__logo {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    justify-content: center;
+}
+
+.navigation__listItem {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 239px;
+}
+
+.navigation__listItem_left {
+    text-align: left;
+}
+
+.navigation__listItem_right {
+    text-align: right;
+}
+
+.promoText {
     width: 568px;
     margin: 0 auto;
 }
@@ -156,50 +222,99 @@ a {
     padding-bottom: 17px;
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 36px;
-}
-
 .bookingForm {
     padding: 55px;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
+.bookingForm__label {
+    margin-right: 18px;
+}
 
 .bookingForm__field {
     display: flex;
+    font-weight: bold;
     flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
-.container2__heading {
-    padding-bottom: 23px;
+.dataInput {
+    font-weight: bold;
+    display: inline-flex;
+    background-color: #f2f2f2;
+    color: #000000;
 }
 
-.container2__heading1 {
-    padding-bottom: 28px;
+.input {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    width: 100%;
+    background: transparent;
+    border: 0;
 }
 
-.container2__heading2 {
-    padding-bottom: 39px;
+.dataInput_grow {
+    display: flex;
+    flex-grow: 1;
+}
+.guestsNumber {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.button_add {
+    width: 30px;
+    background-color: #f2f2f2;
+    color:rgba(0, 1, 1, 0.15);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.bookingForm__label_adults {
+    margin-right: 37px;
+}
+
+.container__guestsNumber {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promoText__heading {
+    margin-bottom: 23px;
+}
+.heading2.promoText__heading {
+    margin-top: 61px;
+}
+
+.promoText__heading1 {
+    margin-bottom: 28px;
+}
+
+.promoText__heading2 {
+    margin-bottom: 39px;
 }
 
 .catalogItem {
-    height: 90px;
     display: flex;
     border-top: 1px solid #ededed;
     border-top: 1px solid #ededed;
     padding-top: 28px;
     padding-bottom: 31px;
+    padding-right: 74px;
+    padding-left: 73px;
 }
+
 .catalogItem:last-child {
     border-bottom: 1px solid #ededed;
 }
 
 .hotels__poster {
     margin-right: 30px;
+    margin-left: 72px;
 }
 
 .button_details {
@@ -222,5 +337,113 @@ a {
 .hotels__description {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookItem {
+    min-width: 142px;
+}
+
+.hotels__metaRate_stars {
+    color: #81b3d2;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: right;
+}
+
+.mainPoster {
+    position: relative;
+    height: 474px;
+    overflow: hidden;
+}
+
+.mainPoster__image {
+    margin-top: -84px;
+}
+
+.mainPoster::after {
+    background:
+        url('../img/svg-sedona/welcome.svg') 50% 50% / 353px auto no-repeat,
+        url('../img/svg-sedona/polygon.svg') 0% 100% / auto no-repeat;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.calendar {
+    opacity: 0.16;
+    width: 38px;
+}
+
+.calendar:hover {
+    opacity: 1;
+    background-color: #f2f2f2;
+}
+
+.calendar:active {
+    fill: #81b3d2;
+}
+
+.inputNumber {
+    width: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 145px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+}
+
+.socialButton:active {
+    fill: #5496bd;
+    fill-opacity: 0.3;
+}
+
+.academyLogo {
+    display: flex;
+    align-items: center;
+}
+
+.academyLogo__pic {
+    width: 115px;
+    height: auto;
+    fill: #231f20;
+    margin-left: 7px;
+    line-height: 0;
+}
+
+.academyLogo__pic:hover {
+    fill: #81b3d2;
+}
+
+.academyLogo__pic:active {
+    fill: #bdbbbc;
+}
+
+.catalogItem__description {
+    display: flex;
     justify-content: space-between;
 }
