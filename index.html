@@ -36,10 +36,10 @@
     </header>
     <main class="contentArea">
       <figure class="mainPoster">
-        <img src="img/welcome.png" alt="poster">
+        <img src="img/welcome.png" alt="poster" width="459" height="353">
       </figure>
       <section class="promoText">
-        <h1 class="heading2 promoText__introHeading">Седона — небольшой городок в Аризоне,
+        <h1 class="heading2 promoText__heading">Седона — небольшой городок в Аризоне,
           заслуживающий большего!
         </h1>
         <p class="promoText_brown">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
@@ -53,26 +53,27 @@
               <p class="sedonasFeatures__description_white">Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </figcaption>
-            <img src="img/layer-10.png" width="800" alt="town's image" class="column2">
+            <img src="img/layer-10.png" width="800" height="256" alt="town's image" class="column2">
           </figure>
         </div>
         <div class="row row_white">
           <figure class="column1">
-            <img src="img/svg-sedona/icon-1.svg" alt="house-icon" class="columnIcon">
+            <img src="img/svg-sedona/icon-1.svg" alt="house-icon" class="columnIcon" width="75" height="72">
             <figcaption>
               <h3 class="heading2 heading2_name">Жильё</h3>
               <p class="sedonasFeatures__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </figcaption>
           </figure>
           <figure class="column1">
-            <img src="img/svg-sedona/icon-3.svg" alt="food-image" class="columnIcon">
+            <img src="img/svg-sedona/icon-3.svg" alt="food-image" class="columnIcon" width="75" height="72">
             <figcaption>
               <h3 class="heading2 heading2_name">Еда</h3>
               <p class="sedonasFeatures__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </figcaption>
           </figure>
           <figure class="column1">
-            <img src="img/svg-sedona/icon-2.svg" alt="present-icon" class="columnIcon columnIcon_present">
+            <img src="img/svg-sedona/icon-2.svg" alt="present-icon" class="columnIcon columnIcon_present" width="64"
+              height="76">
             <figcaption>
               <h3 class="heading2 heading2_name">Сувениры</h3>
               <p class="sedonasFeatures__description">Не только китайского, но и местного производства!</p>
@@ -81,7 +82,7 @@
         </div>
         <div class="row">
           <figure class="demoContainer">
-            <img src="img/layer-5.png" alt="devil's bridge" width="800" class="column2">
+            <img src="img/layer-5.png" alt="devil's bridge" width="800" height="256" class="column2">
             <figcaption class="column1 column1_blue">
               <h2 class="heading2 heading2_white">Там есть Мост&nbsp;дьявола</h2>
               <p class="featureNumber">— №2 —</p>
@@ -113,7 +114,7 @@
           </figure>
         </div>
       </section>
-      <section class="promoText">
+      <section class="promoText2">
         <div class="promoText_headline">
           <h3 class="heading1 promoText__heading">Заинтересовались?</h3>
           <p class="promoText_brown">Укажите предполагаемые даты поездки,
@@ -144,7 +145,7 @@
                 Дата выезда:
               </label>
               <div class="dataInput dataInput_grow">
-                <input type="text" name="checkOut" id="checkOutDate" class="input" value="4 июля 2017">
+                <input type="text" name="checkOut" id="checkOutDate" class="input checkOut" value="4 июля 2017">
                 <button type="button" class="calendar button" title="Календарь">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <path
@@ -157,22 +158,22 @@
             </div>
             <div class="container__guestsNumber">
               <div class="guestsNumber">
-                <label for="adultGuests" class="bookingForm__label bookingForm__label_adults">
+                <label for="adultGuests" class="guestsNumber_adults">
                   Взрослые:
                 </label>
                 <div class="dataInput">
                   <button type="button" title="Отнять" class="button button_add">-</button>
-                  <input type="text" name="adults" id="adultGuests" class="input inputNumber" value="2">
+                  <input type="text" name="adults" id="adultGuests" class="inputNumber" value="2">
                   <button type="button" title="Добавить" class="button button_add">+</button>
                 </div>
               </div>
               <div class="guestsNumber">
-                <label for="childrenGuests" class="bookingForm__label">
+                <label for="childrenGuests" class="guestsNumber_children">
                   Дети:
                 </label>
                 <div class="dataInput">
                   <button type="button" title="Отнять" class="button button_add">-</button>
-                  <input type="text" name="children" id="childrenGuests" class="input inputNumber" value="0">
+                  <input type="text" name="children" id="childrenGuests" class="inputNumber children" value="0">
                   <button type="button" title="Добавить" class="button button_add">+</button>
                 </div>
               </div>
@@ -181,7 +182,11 @@
           </fieldset>
         </form>
       </section>
-      <div class="mapImage"></div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419081.00939796516!2d-112.07530105458548!3d34.854458708334626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sde!4v1551831050557"
+          width="1200" height="473" allowfullscreen></iframe>
+      </div>
     </main>
     <footer class="footer">
       <div class="hashtag">
@@ -231,6 +236,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/external.js"></script>
 </body>
 
 </html>
