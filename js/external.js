@@ -9,7 +9,7 @@ var childrenNumber = form.querySelector('.children');
 
 button.addEventListener('click', function (evt) {
     evt.preventDefault();
-    form.classList.toggle('bookingForm-show');
+    form.classList.toggle('bookingForm_show');
     input.focus();
     input.selectionStart = input.value.length;
 });
